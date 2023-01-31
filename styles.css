@@ -61,6 +61,7 @@ a {
 .form-div {
   color: black;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   background-color: rgba(239, 239, 240, 1);
   width: 60%;
@@ -82,7 +83,7 @@ a {
   flex-flow: row wrap;
   padding: 8px;
   padding-bottom: 16px;
-  gap: 10px;
+  gap: 20px;
 }
 
 label {
@@ -128,6 +129,7 @@ input:focus {
   padding: 10px;
   margin: 10px;
   border-radius: 5px;
+  width: 150px
  }
 
  button:hover {
@@ -159,4 +161,8 @@ a.link {
   color: red;
   white-space: pre-line;
   text-transform: uppercase;
+}
+
+.footer>p {
+  margin: 20px 0 0 10px;
 }
