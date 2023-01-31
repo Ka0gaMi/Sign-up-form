@@ -4,7 +4,7 @@
 
 # Live
 
-- [Github Pages](Ka0gami.github.io/Sign-up-form)
+- [Github Pages](https://ka0gami.github.io/Sign-up-form/)
 
 # Form validation
 
