@@ -32,27 +32,34 @@
           <form action="POST" id="form">
             <div class="input">
               <label for="first-name">FIRST NAME</label>
-              <input type="text" name="first-name" id="first-name">
+              <input type="text" name="first-name" id="first-name" style="text-transform: capitalize;" required>
+              <span class="error" id="first-name-error"></span>
             </div>
             <div class="input">
               <label for="last-name">LAST NAME</label>
-              <input type="text" name="last-name" id="last-name">
+              <input type="text" name="last-name" id="last-name" style="text-transform: capitalize;" required>
+              <span class="error" id="last-name-error"></span>
             </div>
             <div class="input">
               <label for="">EMAIL</label>
-              <input type="email" name="email" id="email">
+              <input type="email" name="email" id="email" required>
+              <span class="error" id="email-error"></span>
             </div>
             <div class="input">
               <label for="phone-number">PHONE NUMBER</label>
-              <input type="tel" name="phone-number" id="phone-number">
+              <input type="tel" name="phone-number" id="phone-number" pattern="[0-9]{9}">
+              <span class="error" id="phone-number-error"></span>
             </div>
             <div class="input">
               <label for="password">PASSWORD</label>
-              <input type="password" name="password" id="password">
+              <input type="password" name="password" id="password" required minlength="6" maxlength="30"
+              pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$">
+              <span class="error" id="password-error"></span>
             </div>
             <div class="input">
-              <label for="password-repeat">CONFIRM PASSWORD</label>
-              <input type="password" name="password-repeat" id="password-repeat">
+              <label for="password-confirm">CONFIRM PASSWORD</label>
+              <input type="password" name="password-confirm" id="password-confirm" required>
+              <span class="error" id="password-confirm-error"></span>
             </div>
           </form>
       </div>
@@ -62,5 +69,7 @@
       </div>
     </div>
   </div>
+
+  <script src="./script.js"></script>
 </body>
 </html>
